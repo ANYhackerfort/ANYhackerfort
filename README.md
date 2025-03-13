@@ -9,9 +9,9 @@ Lastly, when it comes to 2D, building node-based software is a passion of mine, 
 
 ![Matthew's Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AkuraDiary&theme=tokyonight&layout=compact) 
 
-## My Linked-in : 
+## My Linkedin : 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/matthew-zhang-1b3b23272/)
-**
+
 ## My Youtube (I make music here):
 [![YouTube](https://img.shields.io/badge/YouTube-Subscribe-red?logo=youtube)](https://www.youtube.com/@LaibentonMusicGarage)
 
