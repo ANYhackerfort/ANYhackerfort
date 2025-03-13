@@ -1,51 +1,24 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h1 align="center">Hello There<img src="https://github.com/souvikguria98/souvikguria98/blob/master/Hi.gif" width="30"> </h1>
 
-Currently, two official plugins are available:
+### :smiley_cat: I am a student at University of California: Santa Barbara
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I am a Computer Science and Statistics double major passionate about creating realistic 3D controls modeled after the real world. My work focuses on developing interactive systems where virtual actions update physical devices in real time—and vice versa—bridging the gap between digital and physical environments.
 
-## Expanding the ESLint configuration
+Moreover, I'm deeply fascinated by predictive modeling, harnessing the power of Agents and LLMs to uncover insights and drive intelligent decision-making (modeling humans in a pandemic etc..).  I also love blending AI with real-world applications, whether it’s designing seamless workflows, optimizing processes, or crafting tools that bring ideas to life.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Lastly, when it comes to 2D, building node-based software is a passion of mine, the intuitiveness and interactivness of a node-based system empower users to be creative and explore with their domain knowledge, without the need for writing code. 
 
-- Configure the top-level `parserOptions` property like this:
+![Matthew's Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AkuraDiary&theme=tokyonight&layout=compact) 
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## My Linked-in : 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/matthew-zhang-1b3b23272/)
+**
+## My Youtube (I make music here):
+[![YouTube](https://img.shields.io/badge/YouTube-Subscribe-red?logo=youtube)](https://www.youtube.com/@LaibentonMusicGarage)
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## My personal Website:
+[Under construction] 
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-# Datathon-2025
+------
+Last Edited on: 3/13/2025
