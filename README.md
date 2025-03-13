@@ -7,8 +7,6 @@ Moreover, I'm deeply fascinated by predictive modeling, harnessing the power of 
 
 Lastly, when it comes to 2D, building node-based software is a passion of mine, the intuitiveness and interactivness of a node-based system empower users to be creative and explore with their domain knowledge, without the need for writing code. 
 
-<p style="color:blue;">Check below for my projects! Some are already deployed!</p>
-
 [![Matthew's Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ANYhackerfort&theme=tokyonight&layout=compact&hide=makefile,jupyter%20notebook)](https://github.com/ANYhackerfort)
 
 ## My Linkedin : 
@@ -19,3 +17,5 @@ Lastly, when it comes to 2D, building node-based software is a passion of mine, 
 
 ## My personal Website:
 [Under construction] 
+
+## Check below for my projects! Some are already deployed!
