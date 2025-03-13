@@ -1,7 +1,7 @@
 
-<h1 align="center">Hello There<img src="https://github.com/souvikguria98/souvikguria98/blob/master/Hi.gif" width="30"> </h1>
+<h1 align="center">Hello<img src="https://github.com/souvikguria98/souvikguria98/blob/master/Hi.gif" width="30"> </h1>
 
-### :smiley_cat: I am a student at University of California: Santa Barbara
+# 💻 I am a student at the University of California, Santa Barbara
 
 I am a Computer Science and Statistics double major passionate about creating realistic 3D controls modeled after the real world. My work focuses on developing interactive systems where virtual actions update physical devices in real time—and vice versa—bridging the gap between digital and physical environments.
 
