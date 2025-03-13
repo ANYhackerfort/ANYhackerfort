@@ -1,17 +1,37 @@
 import React from "react";
-import * as THREE from "three";
-import { useThree } from "@react-three/fiber";
+import { Grid } from "@react-three/drei";
+import { Plane } from "@react-three/drei";
 
-const GridPlane: React.FC = () => {
-  const { scene } = useThree();
-
+const XYZGrid: React.FC = () => {
   return (
-    <mesh rotation={[-Math.PI / 2, 0, 0]} receiveShadow>
-      <planeGeometry args={[20, 20]} /> {/* Adjust size here */}
-      <meshStandardMaterial color="white" />
-      <gridHelper args={[20, 20, "gray", "lightgray"]} position={[0, 0.01, 0]} />
-    </mesh>
+    <group name="Complete3DGrid">
+      {/* Grid */}
+      <Grid 
+        position={[0, 0, 0]} 
+        rotation={[0, Math.PI / 2, 0]} 
+        cellSize={10} 
+        cellThickness={0.5} 
+        sectionSize={50}  
+        sectionThickness={1.5} 
+        cellColor={"white"} 
+        sectionColor={"white"} 
+        fadeDistance={100}  
+        infiniteGrid 
+      />
+
+      {/* Transparent Layer on top */}
+      <Plane 
+        args={[500, 500]} // Large enough to cover the entire grid
+        position={[0, -10, 0]} // Slightly above the grid
+        rotation={[-Math.PI / 2, 0, 0]} // Align with the grid
+      >
+        <meshStandardMaterial 
+          transparent 
+          opacity={0.00} // Adjust transparency (0 = fully invisible)
+        />
+      </Plane>
+    </group>
   );
 };
 
-export default GridPlane;
+export default XYZGrid;

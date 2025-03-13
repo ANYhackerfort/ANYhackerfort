@@ -1,37 +1,50 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { PerspectiveCamera, OrbitControls } from "@react-three/drei";
-import * as THREE from "three";
+import { useThree } from "@react-three/fiber";
+import { useCamera } from "./camera_context";
 
 const Lab1Camera: React.FC = () => {
-    const cameraRef = useRef<THREE.PerspectiveCamera | null>(null);
+    const { position } = useCamera(); // Get camera position from context
+    const cameraRef = useRef<any>(null);
+    const controlsRef = useRef<any>(null);
+    const { scene } = useThree();
 
-    const setCameraRef = (camera: THREE.PerspectiveCamera | null) => {
-        if (camera) {
-            cameraRef.current = camera;
+    // Update camera position when context position changes
+    useEffect(() => {
+        if (cameraRef.current) {
+            cameraRef.current.position.set(position.x, position.y, position.z + 0.1);
+            cameraRef.current.updateProjectionMatrix(); // Ensure matrix updates
         }
-    };
+
+        if (controlsRef.current) {
+            controlsRef.current.target.set(position.x, position.y, position.z);
+            controlsRef.current.update(); // Ensure controls update
+        }
+    }, [position]); // React when position changes
 
     return (
         <>
             <PerspectiveCamera
-                ref={setCameraRef} // Attach the callback ref to ensure proper synchronization
+                ref={cameraRef}
                 makeDefault
-                position={[0, 2, 5]} // Moved camera slightly to see the scene
-                fov={65}
+                position={[position.x, position.y, position.z + 0.1]} // Use context-provided position
+                fov={70}
                 aspect={window.innerWidth / window.innerHeight}
                 near={0.1}
                 far={1000}
             />
             <OrbitControls 
+                target={[position.x, position.y, position.z]} 
+                ref={controlsRef} // Store reference for manual updates
                 enableDamping={true} // Smooth camera movement
                 dampingFactor={0.1} 
-                rotateSpeed={0.7} // Adjust rotation speed
+                rotateSpeed={0.3} // Adjust rotation speed
                 panSpeed={0.7} // Adjust panning speed
                 minDistance={1} 
                 maxDistance={50} 
-                enablePan={true} // Allow panning
-                screenSpacePanning={false} // Allows panning only with right-click
-                mouseButtons={{ MIDDLE: THREE.MOUSE.DOLLY, RIGHT: THREE.MOUSE.ROTATE }}
+                enablePan={false} // Allow panning
+                screenSpacePanning={true} // Allows panning only with right-click
+                mouseButtons={{ MIDDLE: 2, RIGHT: 0 }} 
             />
         </>
     );
