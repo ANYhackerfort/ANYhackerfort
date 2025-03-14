@@ -1,5 +1,5 @@
 
-# 💻 Hello, I am a Computer Science and Statistics student at the University of California, Santa Barbara
+# 💻 Hello, I'm double major in Computer Science and Statistics at University of California, Santa Barbara
 
 I'm passionate about creating realistic 3D controls modeled after the real world. My work focuses on developing interactive systems where virtual actions update physical devices in real time—and vice versa—bridging the gap between digital and physical environments.
 
