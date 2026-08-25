@@ -42,6 +42,10 @@ It supports large synchronized experiments with hundreds of users and includes r
 
 **https://linghezhang.me**
 
+## Google Scholar
+
+[Google Scholar](https://scholar.google.com/citations?user=Jwy34fEAAAAJ&hl=en)
+
 ## LinkedIn
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/matthew-zhang-1b3b23272/)
@@ -51,4 +55,5 @@ It supports large synchronized experiments with hundreds of users and includes r
 I also make music.
 
 [![YouTube](https://img.shields.io/badge/YouTube-Subscribe-red?logo=youtube)](https://www.youtube.com/@LaibentonMusicGarage)
+
 
